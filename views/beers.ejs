@@ -1,0 +1,14 @@
+<div><%- console.log(beers) %></div>
+
+<ul>
+    <% beers.forEach((beer) => { %>
+        <div style="border-width:2px; border-style:solid; border-color:black; margin: 10px; padding: 10px">
+            <img src="<%- beer.image_url%>" alt="" style="width: 50px">
+            <h3><%- beer.name %></h6>
+            <p><%- beer.description %></p>
+            <p><%- beer.tagline %></p>
+        </div>
+        
+      <!-- <li><%- beer.name%> <%-beer.tagline%></li> -->
+    <% }) %>
+</ul>
